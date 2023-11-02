@@ -45,8 +45,8 @@ resource "aws_db_instance" "replica" {
   replicate_source_db             = ""
   iops                            = 4750
   max_allocated_storage           = 1000
-  identifier                      = "prod-mi-rds-replica"
-  instance_class                  = "db.r6g.4xlarge"
+  identifier                      = ""
+  instance_class                  = ""
   performance_insights_enabled    = true
   enabled_cloudwatch_logs_exports = ["postgresql"]
   storage_encrypted               = true
@@ -82,5 +82,5 @@ resource "aws_security_group_rule" "rds_egress" {
   to_port           = 0
   protocol          = "-1"
   cidr_blocks       = ["0.0.0.0/0"]
-  security_group_id = "sg-0f81aaa00a6973c28"
+  security_group_id = ""
 }
