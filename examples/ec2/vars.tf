@@ -2,7 +2,7 @@ variable "ami" {
   type = map
 
   default = {
-    "us-east-2" = "ami-064ff912f78e3e561"
+    "us-east-2" = ""
   }
 }
 
@@ -23,5 +23,5 @@ variable "aws_region" {
 }
 
 variable "subnet_ids" {
-  default =  [ "subnet-005e409ba19724db3", "subnet-0f8f9d69ae2e58e78", "subnet-0c73a144a4c5918ca" ]
+  default =  [ "", "", "" ]
 }
